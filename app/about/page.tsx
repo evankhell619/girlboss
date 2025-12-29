@@ -3,8 +3,9 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Award, Heart, Users, Sparkles, Clock, MessageCircle } from "lucide-react"
+import { Award, Heart, Users, Sparkles, Clock } from "lucide-react"
 import Navigation from "@/components/navigation"
+import { WhatsAppIcon } from "@/components/whatsapp-icon"
 
 export default function AboutPage() {
   const team = [
@@ -56,7 +57,7 @@ export default function AboutPage() {
                     size="lg"
                     className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                   >
-                    <MessageCircle className="w-5 h-5 mr-2" />
+                    <WhatsAppIcon className="w-5 h-5 mr-2" />
                     Book With Us
                   </Button>
                 </Link>
@@ -273,7 +274,7 @@ export default function AboutPage() {
               size="lg"
               className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-12 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
             >
-              <MessageCircle className="w-5 h-5 mr-2" />
+              <WhatsAppIcon className="w-5 h-5 mr-2" />
               Book Your Appointment
             </Button>
           </Link>

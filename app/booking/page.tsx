@@ -1,7 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MessageCircle, Phone, Calendar, Clock } from "lucide-react";
+import { Phone, Calendar, Clock } from "lucide-react";
 import Navigation from "@/components/navigation";
 
 export default function BookingPage() {

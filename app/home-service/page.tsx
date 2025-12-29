@@ -1,9 +1,10 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Home, Clock, Star, MapPin, MessageCircle } from "lucide-react"
-import Navigation from "@/components/navigation"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Home, Clock, Star, MapPin } from "lucide-react";
+import Navigation from "@/components/navigation";
+import { WhatsAppIcon } from "@/components/whatsapp-icon";
 
 export default function HomeServicePage() {
   const services = [
@@ -31,7 +32,7 @@ export default function HomeServicePage() {
       price: "From $350",
       image: "/placeholder.svg?height=300&width=400",
     },
-  ]
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50">
@@ -46,8 +47,9 @@ export default function HomeServicePage() {
                 Home Service
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Experience luxury beauty treatments in the comfort of your own home. Our mobile beauty services bring
-                the Girl Boss experience directly to you.
+                Experience luxury beauty treatments in the comfort of your own
+                home. Our mobile beauty services bring the Girl Boss experience
+                directly to you.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/booking">
@@ -55,7 +57,7 @@ export default function HomeServicePage() {
                     size="lg"
                     className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                   >
-                    <MessageCircle className="w-5 h-5 mr-2" />
+                    <WhatsAppIcon className="w-5 h-5 mr-2" />
                     Book Home Service
                   </Button>
                 </Link>
@@ -64,7 +66,7 @@ export default function HomeServicePage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600"
+                src="/images/home service.jpg?height=500&width=600"
                 alt="Home Beauty Service"
                 width={600}
                 height={500}
@@ -81,9 +83,12 @@ export default function HomeServicePage() {
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Our Home Services</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+              Our Home Services
+            </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Professional beauty treatments delivered to your location with the same high standards as our studio
+              Professional beauty treatments delivered to your location with the
+              same high standards as our studio
             </p>
           </div>
 
@@ -105,9 +110,13 @@ export default function HomeServicePage() {
                 </div>
 
                 <CardHeader>
-                  <CardTitle className="text-xl font-bold text-gray-800 mb-2">{service.title}</CardTitle>
+                  <CardTitle className="text-xl font-bold text-gray-800 mb-2">
+                    {service.title}
+                  </CardTitle>
                   <div className="flex justify-between items-center mb-2">
-                    <span className="text-2xl font-bold text-pink-600">{service.price}</span>
+                    <span className="text-2xl font-bold text-pink-600">
+                      {service.price}
+                    </span>
                     <div className="flex items-center text-sm text-gray-500">
                       <Clock className="w-4 h-4 mr-1" />
                       {service.duration}
@@ -119,7 +128,7 @@ export default function HomeServicePage() {
                   <p className="text-gray-600 mb-6">{service.description}</p>
                   <Link href="/booking">
                     <Button className="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white py-3 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                      <MessageCircle className="w-4 h-4 mr-2" />
+                      <WhatsAppIcon className="w-4 h-4 mr-2" />
                       Book This Service
                     </Button>
                   </Link>
@@ -134,9 +143,12 @@ export default function HomeServicePage() {
       <section className="py-20 bg-gradient-to-r from-pink-100 to-purple-100">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">Why Choose Home Service?</h2>
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">
+              Why Choose Home Service?
+            </h2>
             <p className="text-xl text-gray-600">
-              Experience the convenience and luxury of professional beauty treatments at home
+              Experience the convenience and luxury of professional beauty
+              treatments at home
             </p>
           </div>
 
@@ -145,22 +157,26 @@ export default function HomeServicePage() {
               {
                 icon: <Home className="w-12 h-12 text-pink-500" />,
                 title: "Comfort & Privacy",
-                description: "Enjoy treatments in your own comfortable, private space",
+                description:
+                  "Enjoy treatments in your own comfortable, private space",
               },
               {
                 icon: <Clock className="w-12 h-12 text-purple-500" />,
                 title: "Time Saving",
-                description: "No travel time needed - we come to you at your convenience",
+                description:
+                  "No travel time needed - we come to you at your convenience",
               },
               {
                 icon: <Star className="w-12 h-12 text-pink-500" />,
                 title: "Same Quality",
-                description: "Professional equipment and products for studio-quality results",
+                description:
+                  "Professional equipment and products for studio-quality results",
               },
               {
                 icon: <MapPin className="w-12 h-12 text-purple-500" />,
                 title: "Flexible Location",
-                description: "Service available at your home, office, or preferred location",
+                description:
+                  "Service available at your home, office, or preferred location",
               },
             ].map((benefit, index) => (
               <Card
@@ -168,7 +184,9 @@ export default function HomeServicePage() {
                 className="text-center p-6 bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
               >
                 <div className="flex justify-center mb-4">{benefit.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">{benefit.title}</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  {benefit.title}
+                </h3>
                 <p className="text-gray-600">{benefit.description}</p>
               </Card>
             ))}
@@ -179,10 +197,12 @@ export default function HomeServicePage() {
       {/* Service Areas */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-800 mb-6">Service Areas</h2>
+          <h2 className="text-4xl font-bold text-gray-800 mb-6">
+            Service Areas
+          </h2>
           <p className="text-xl text-gray-600 mb-8">
-            We provide home services within a 25km radius of our main studio. Contact us to confirm availability in your
-            area.
+            We provide home services within a 25km radius of our main studio.
+            Contact us to confirm availability in your area.
           </p>
 
           <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg p-8 mb-8">
@@ -200,12 +220,12 @@ export default function HomeServicePage() {
               size="lg"
               className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-12 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
             >
-              <MessageCircle className="w-5 h-5 mr-2" />
+              <WhatsAppIcon className="w-5 h-5 mr-2" />
               Check Availability & Book
             </Button>
           </Link>
         </div>
       </section>
     </div>
-  )
+  );
 }

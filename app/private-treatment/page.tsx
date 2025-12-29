@@ -3,8 +3,9 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Crown, Shield, Clock, Star, Users, MessageCircle } from "lucide-react"
+import { Crown, Shield, Clock, Star, Users } from "lucide-react"
 import Navigation from "@/components/navigation"
+import { WhatsAppIcon } from "@/components/whatsapp-icon"
 
 export default function PrivateTreatmentPage() {
   const packages = [
@@ -69,7 +70,7 @@ export default function PrivateTreatmentPage() {
                     size="lg"
                     className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                   >
-                    <MessageCircle className="w-5 h-5 mr-2" />
+                    <WhatsAppIcon className="w-5 h-5 mr-2" />
                     Book Private Session
                   </Button>
                 </Link>
@@ -154,7 +155,7 @@ export default function PrivateTreatmentPage() {
 
                   <Link href="/booking">
                     <Button className="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white py-3 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                      <MessageCircle className="w-4 h-4 mr-2" />
+                      <WhatsAppIcon className="w-4 h-4 mr-2" />
                       Book This Package
                     </Button>
                   </Link>
@@ -259,7 +260,7 @@ export default function PrivateTreatmentPage() {
               size="lg"
               className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-12 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
             >
-              <MessageCircle className="w-5 h-5 mr-2" />
+              <WhatsAppIcon className="w-5 h-5 mr-2" />
               Book Private Treatment
             </Button>
           </Link>

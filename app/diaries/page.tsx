@@ -6,9 +6,10 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Calendar, User, Heart, MessageCircle, Share2, Instagram, ExternalLink, Eye } from "lucide-react"
+import { Calendar, User, Heart, Share2, Instagram, ExternalLink, Eye } from "lucide-react"
 import Navigation from "@/components/navigation"
 import { InstagramCarousel } from "@/components/instagram-carousel"
+import { WhatsAppIcon } from "@/components/whatsapp-icon"
 import {
   getInstagramPosts,
   formatInstagramDate,
@@ -92,27 +93,23 @@ export default function DiariesPage() {
           </div>
 
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
-            {instagramPosts.map((post, index) => (
+            {instagramPosts.map((post) => (
               <Card
                 key={post.id}
-                className={`group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm border-0 shadow-lg overflow-hidden ${
-                  index === 0 ? "lg:col-span-2 lg:row-span-2" : ""
-                }`}
+                className="group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm border-0 shadow-lg overflow-hidden"
               >
                 <div className="relative overflow-hidden">
                   {/* Instagram Media Display */}
                   {post.media_type === "CAROUSEL_ALBUM" && post.children ? (
-                    <InstagramCarousel media={post.children} className={index === 0 ? "h-64 lg:h-96" : "h-48"} />
+                    <InstagramCarousel media={post.children} className="h-64" />
                   ) : (
                     <div className="relative">
                       <Image
                         src={post.media_url || "/placeholder.svg"}
                         alt="Instagram post"
                         width={600}
-                        height={index === 0 ? 400 : 300}
-                        className={`w-full object-cover group-hover:scale-110 transition-transform duration-500 ${
-                          index === 0 ? "h-64 lg:h-96" : "h-48"
-                        }`}
+                        height={400}
+                        className="w-full object-cover group-hover:scale-110 transition-transform duration-500 h-64"
                       />
                       {post.media_type === "VIDEO" && (
                         <div className="absolute inset-0 flex items-center justify-center">
@@ -144,7 +141,7 @@ export default function DiariesPage() {
                   )}
                 </div>
 
-                <CardHeader className={index === 0 ? "pb-3" : "pb-2"}>
+                <CardHeader className="pb-2">
                   <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center">
                       <User className="w-4 h-4 text-gray-400 dark:text-gray-300 mr-2" />
@@ -160,18 +157,14 @@ export default function DiariesPage() {
                 </CardHeader>
 
                 <CardContent className="pt-0">
-                  <p
-                    className={`text-gray-600 dark:text-gray-100 mb-4 leading-relaxed ${
-                      index === 0 ? "text-base" : "text-sm line-clamp-3"
-                    }`}
-                  >
+                  <p className="text-gray-600 dark:text-gray-100 mb-4 leading-relaxed text-sm line-clamp-3">
                     {post.caption.replace(/#\w+/g, "").trim()}
                   </p>
 
                   {/* Hashtags */}
                   <div className="flex flex-wrap gap-2 mb-4">
                     {extractHashtags(post.caption)
-                      .slice(0, index === 0 ? 6 : 3)
+                      .slice(0, 4)
                       .map((hashtag, hashIndex) => (
                         <Badge
                           key={hashIndex}
@@ -193,7 +186,7 @@ export default function DiariesPage() {
                         </span>
                       </div>
                       <div className="flex items-center">
-                        <MessageCircle className="w-4 h-4 text-purple-500 mr-1" />
+                        <WhatsAppIcon className="w-4 h-4 text-purple-500 mr-1" />
                         <span className="text-sm text-gray-600 dark:text-gray-200">
                           {post.comments_count ? post.comments_count : "Comment"}
                         </span>
@@ -241,7 +234,7 @@ export default function DiariesPage() {
                   variant="outline"
                   className="border-2 border-pink-500 text-pink-600 hover:bg-pink-50 dark:hover:bg-pink-900/20 px-8 py-3 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 bg-transparent"
                 >
-                  <MessageCircle className="w-5 h-5 mr-2" />
+                  <WhatsAppIcon className="w-5 h-5 mr-2" />
                   Book Appointment
                 </Button>
               </Link>

@@ -2,15 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Star,
-  Instagram,
-  Facebook,
-  Phone,
-  MapPin,
-  MessageCircle,
-} from "lucide-react";
+import { Star, Instagram, Facebook, Phone, MapPin } from "lucide-react";
 import Navigation from "@/components/navigation";
+import { WhatsAppIcon } from "@/components/whatsapp-icon";
 
 export default function HomePage() {
   return (
@@ -49,14 +43,7 @@ export default function HomePage() {
                   size="lg"
                   className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-5 h-5 mr-2"
-                    viewBox="0 0 32 32"
-                    fill="currentColor"
-                  >
-                    <path d="M16 .396c-8.84 0-16 6.953-16 15.54 0 2.74.797 5.3 2.164 7.523L0 32l8.465-2.207c2.308 1.256 4.984 1.964 7.887 1.964 8.84 0 16-6.953 16-15.54S24.84.396 16 .396zm0 28.708c-2.676 0-5.164-.736-7.273-2.012l-.52-.308-5.027 1.313 1.344-4.914-.34-.508c-1.28-1.925-2-4.164-2-6.58 0-6.757 5.805-12.271 12.816-12.271 7.012 0 12.816 5.514 12.816 12.27 0 6.756-5.805 12.27-12.816 12.27zm7.027-9.695c-.383-.191-2.27-1.117-2.625-1.242-.352-.127-.609-.191-.867.191-.258.383-.996 1.242-1.223 1.5-.223.254-.445.287-.828.096-.383-.192-1.621-.596-3.088-1.9-1.14-1.015-1.91-2.27-2.133-2.65-.223-.383-.023-.59.17-.78.175-.174.383-.445.574-.668.192-.223.255-.383.384-.639.127-.254.064-.478-.031-.668-.096-.191-.867-2.088-1.188-2.85-.312-.762-.629-.658-.867-.67l-.74-.014c-.223 0-.582.08-.887.383-.305.305-1.16 1.133-1.16 2.766s1.188 3.205 1.355 3.43c.175.223 2.34 3.567 5.668 5.004.793.342 1.41.547 1.895.699.797.254 1.52.219 2.09.133.637-.094 1.963-.801 2.238-1.574.277-.773.277-1.434.195-1.574-.08-.14-.305-.223-.637-.383z" />
-                  </svg>
+                  <WhatsAppIcon className="w-5 h-5 mr-2" />
                   Book Now
                 </Button>
               </Link>
@@ -117,6 +104,30 @@ export default function HomePage() {
                 description:
                   "Natural lash enhancement for a lifted, curled look",
                 image: "/images/lashlift.png",
+              },
+              {
+                title: "Pedicure",
+                description:
+                  "Relaxing foot care with clean finishing and lasting shine",
+                image: "/images/callus pedicure.png",
+              },
+              {
+                title: "Manicure",
+                description:
+                  "Polished hands with expert shaping and smooth finish",
+                image: "/images/manicure.jpg",
+              },
+              {
+                title: "Waxing by RICA",
+                description:
+                  "Gentle waxing experience with premium RICA products",
+                image: "/images/waxing.jpg",
+              },
+              {
+                title: "Lip Tatto",
+                description:
+                  "Soft tint for fuller, defined lips with a natural look",
+                image: "/images/lip tatto.jpg",
               },
             ].map((service, index) => (
               <Card
@@ -360,7 +371,9 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center">
                   <MapPin className="w-4 h-4 mr-2" />
-                  <span>Taman Griya, Jimbaran, Kuta Selatan, Badung, Bali, Indonesia</span>
+                  <span>
+                    Taman Griya, Jimbaran, Kuta Selatan, Badung, Bali, Indonesia
+                  </span>
                 </div>
               </div>
             </div>
