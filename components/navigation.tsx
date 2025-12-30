@@ -46,10 +46,13 @@ export default function Navigation() {
             <ThemeToggle />
           </div>
 
-          {/* Mobile Menu Button */}
-          <Button variant="ghost" size="sm" className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </Button>
+          {/* Mobile Controls */}
+          <div className="lg:hidden flex items-center gap-2">
+            <ThemeToggle />
+            <Button variant="ghost" size="sm" onClick={() => setIsOpen(!isOpen)}>
+              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </Button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -66,9 +69,6 @@ export default function Navigation() {
                   {item.name}
                 </Link>
               ))}
-              <div className="px-4 py-2">
-                <ThemeToggle />
-              </div>
             </div>
           </div>
         )}

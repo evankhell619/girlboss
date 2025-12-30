@@ -175,6 +175,18 @@ html {
   @apply from-gray-800 to-purple-900;
 }
 
+/* Dark mode button gradient override */
+.dark button.bg-gradient-to-r {
+  --tw-gradient-from: #be185d var(--tw-gradient-from-position);
+}
+
+/* Dark mode h1 gradient override */
+.dark h1.bg-gradient-to-r {
+  --tw-gradient-from: #f9a8d4 var(--tw-gradient-from-position);
+  --tw-gradient-via: #e9d5ff var(--tw-gradient-via-position);
+  --tw-gradient-to: #d8b4fe var(--tw-gradient-to-position);
+}
+
 /* Ensure proper contrast in dark mode */
 .dark .text-gray-600 {
   @apply text-gray-200;
