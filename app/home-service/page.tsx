@@ -13,24 +13,24 @@ export default function HomeServicePage() {
       description:
         "Professional eyelash extension service in the comfort of your own home. Perfect for busy schedules or special occasions.",
       duration: "2.5-3.5 hours",
-      price: "From $200",
-      image: "/placeholder.svg?height=300&width=400",
+      price: "From Rp 225.000",
+      image: "/images/hs1.jpg",
     },
     {
       title: "Home Nail Art Session",
       description:
         "Creative nail art and manicure services delivered to your doorstep. Includes all premium products and tools.",
       duration: "1.5-2 hours",
-      price: "From $120",
-      image: "/placeholder.svg?height=300&width=400",
+      price: "From Rp 265.000",
+      image: "/images/hs2.png",
     },
     {
       title: "Bridal Beauty Package",
       description:
         "Complete bridal beauty service including lashes, nails, and brows. Perfect for your special day preparation.",
       duration: "4-5 hours",
-      price: "From $350",
-      image: "/placeholder.svg?height=300&width=400",
+      price: "From Rp 350.000",
+      image: "/images/hs3.jpg",
     },
   ];
 

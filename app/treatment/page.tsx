@@ -14,7 +14,7 @@ export default function TreatmentPage() {
       description:
         "Transform your look with our premium eyelash extensions. Choose from classic, volume, or hybrid styles for stunning, long-lasting results.",
       duration: "2-3 hours",
-      price: "From Rp 1.500.000",
+      price: "From Rp 270.000",
       features: [
         "Classic Extensions",
         "Volume Extensions",
@@ -29,7 +29,7 @@ export default function TreatmentPage() {
       description:
         "Enhance your natural lashes with our professional lifting treatment. Get beautifully curled, lifted lashes that last 6-8 weeks.",
       duration: "1-1.5 hours",
-      price: "From Rp 1.200.000",
+      price: "From Rp 225.000",
       features: [
         "Natural Lash Enhancement",
         "Long-lasting Results",
@@ -44,7 +44,7 @@ export default function TreatmentPage() {
       description:
         "Perfect your eyebrows with our signature Brow Bomber treatment. Includes shaping, tinting, and styling for flawless brows.",
       duration: "45 minutes",
-      price: "From Rp 800.000",
+      price: "From Rp 250.000",
       features: [
         "Professional Shaping",
         "Brow Tinting",
@@ -59,7 +59,7 @@ export default function TreatmentPage() {
       description:
         "Revolutionary stem cell treatment to promote natural lash growth and strengthen existing lashes for healthier, fuller lashes.",
       duration: "1 hour",
-      price: "From Rp 1.000.000",
+      price: "From Rp 350.000",
       features: [
         "Stem Cell Technology",
         "Natural Growth Promotion",

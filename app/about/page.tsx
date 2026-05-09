@@ -3,35 +3,32 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Award, Heart, Users, Sparkles, Clock } from "lucide-react"
+import { Award, Heart, Users, Sparkles } from "lucide-react"
 import Navigation from "@/components/navigation"
 import { WhatsAppIcon } from "@/components/whatsapp-icon"
 
 export default function AboutPage() {
-  const team = [
+  const pressOnNailsMenu = [
     {
-      name: "Sarah Chen",
-      role: "Founder & Master Technician",
-      experience: "8+ years",
-      specialties: ["Eyelash Extensions", "Advanced Techniques"],
-      image: "/placeholder.svg?height=300&width=300",
-      bio: "Sarah founded Girl Boss with a vision to provide luxury beauty services that empower women to feel confident and beautiful.",
+      title: "Classic Press On Nails",
+      price: "From Rp 150.000",
+      details: ["Reusable set", "Natural finish", "Custom sizing"],
+      image: "/images/press on nail 1.png",
+      description: "Elegant ready-to-wear nails for a clean, polished everyday look.",
     },
     {
-      name: "Maria Rodriguez",
-      role: "Senior Nail Artist",
-      experience: "6+ years",
-      specialties: ["Nail Art", "Creative Designs"],
-      image: "/placeholder.svg?height=300&width=300",
-      bio: "Maria brings creativity and precision to every nail art design, creating unique looks that reflect each client's personality.",
+      title: "Nail Art Press On Nails",
+      price: "From Rp 200.000",
+      details: ["Hand-painted design", "Reusable set", "Glue kit included"],
+      image: "/images/press on nail 2.png",
+      description: "Statement designs made for special occasions, content days, and standout looks.",
     },
     {
-      name: "Emma Thompson",
-      role: "Lash & Brow Specialist",
-      experience: "5+ years",
-      specialties: ["Lash Lifting", "Brow Shaping"],
-      image: "/placeholder.svg?height=300&width=300",
-      bio: "Emma specializes in enhancing natural beauty through expert lash and brow treatments that complement each client's features.",
+      title: "Custom Press On Nails",
+      price: "From Rp 250.000",
+      details: ["Personalized design", "Shape consultation", "Made to order"],
+      image: "/images/press on nail 3.png",
+      description: "A fully customized set tailored to your preferred color, shape, and nail art style.",
     },
   ]
 
@@ -75,7 +72,7 @@ export default function AboutPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600"
+                src="/images/logo2.png?height=500&width=600"
                 alt="Girl Boss Beauty Studio"
                 width={600}
                 height={500}
@@ -159,26 +156,26 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team */}
+      {/* Press On Nails Menu */}
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Meet Our Team</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Press On Nails Menu</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our talented team of beauty professionals is dedicated to helping you achieve your beauty goals
+              Shop reusable press-on nail sets made for instant glam, easy application, and custom-fit comfort.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
-            {team.map((member, index) => (
+            {pressOnNailsMenu.map((item, index) => (
               <Card
                 key={index}
                 className="group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white/90 backdrop-blur-sm border-0 shadow-lg overflow-hidden"
               >
                 <div className="relative overflow-hidden">
                   <Image
-                    src={member.image || "/placeholder.svg"}
-                    alt={member.name}
+                    src={item.image || "/placeholder.svg"}
+                    alt={item.title}
                     width={300}
                     height={300}
                     className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
@@ -189,27 +186,34 @@ export default function AboutPage() {
                 <CardContent className="p-6">
                   <div className="flex justify-between items-start mb-2">
                     <div>
-                      <h3 className="text-xl font-bold text-gray-800">{member.name}</h3>
-                      <p className="text-pink-600 font-medium">{member.role}</p>
+                      <h3 className="text-xl font-bold text-gray-800">{item.title}</h3>
+                      <p className="text-pink-600 font-medium">{item.price}</p>
                     </div>
                     <Badge variant="outline" className="border-purple-500 text-purple-600">
-                      <Clock className="w-3 h-3 mr-1" />
-                      {member.experience}
+                      <Sparkles className="w-3 h-3 mr-1" />
+                      Ready Set
                     </Badge>
                   </div>
 
-                  <p className="text-gray-600 mb-4 text-sm leading-relaxed">{member.bio}</p>
+                  <p className="text-gray-600 mb-4 text-sm leading-relaxed">{item.description}</p>
 
                   <div className="mb-4">
-                    <h4 className="font-semibold text-gray-800 mb-2 text-sm">Specialties:</h4>
+                    <h4 className="font-semibold text-gray-800 mb-2 text-sm">Includes:</h4>
                     <div className="flex flex-wrap gap-2">
-                      {member.specialties.map((specialty, specialtyIndex) => (
-                        <Badge key={specialtyIndex} className="bg-pink-100 text-pink-700 text-xs">
-                          {specialty}
+                      {item.details.map((detail, detailIndex) => (
+                        <Badge key={detailIndex} className="bg-pink-100 text-pink-700 text-xs">
+                          {detail}
                         </Badge>
                       ))}
                     </div>
                   </div>
+
+                  <Link href="/booking">
+                    <Button className="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                      <WhatsAppIcon className="w-5 h-5 mr-2" />
+                      Order Now
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             ))}

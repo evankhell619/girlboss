@@ -13,7 +13,7 @@ export default function PrivateTreatmentPage() {
       title: "VIP Solo Experience",
       description: "Exclusive one-on-one treatment session with our master technician in a private suite.",
       duration: "3-4 hours",
-      price: "From $400",
+      price: "From Rp 325.000",
       features: [
         "Private Suite",
         "Master Technician",
@@ -21,25 +21,25 @@ export default function PrivateTreatmentPage() {
         "Complimentary Refreshments",
         "Aftercare Kit",
       ],
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/hs4.jpg",
       popular: true,
     },
     {
       title: "Bridal Private Package",
       description: "Complete bridal beauty preparation with trial session and wedding day service in private setting.",
       duration: "Full Day",
-      price: "From $800",
+      price: "From Rp 400.000",
       features: ["Trial Session", "Wedding Day Service", "Bridal Party Options", "Photography Ready", "Touch-up Kit"],
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/hs4.jpg",
       popular: false,
     },
     {
       title: "Group Private Session",
       description: "Private group treatments for special occasions, parties, or corporate events (2-6 people).",
       duration: "4-6 hours",
-      price: "From $300/person",
+      price: "From Rp 500.000/person",
       features: ["Group Booking", "Party Atmosphere", "Customized Treatments", "Group Discounts", "Event Coordination"],
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/images/hs2.png",
       popular: false,
     },
   ]
@@ -79,7 +79,7 @@ export default function PrivateTreatmentPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600"
+                src="/images/wedd1.jpg?height=500&width=600"
                 alt="Private Treatment Suite"
                 width={600}
                 height={500}
@@ -222,12 +222,12 @@ export default function PrivateTreatmentPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              "/placeholder.svg?height=400&width=400",
-              "/placeholder.svg?height=400&width=400",
-              "/placeholder.svg?height=400&width=400",
-              "/placeholder.svg?height=400&width=400",
-              "/placeholder.svg?height=400&width=400",
-              "/placeholder.svg?height=400&width=400",
+              "/images/pt1.png?height=400&width=400",
+              "/images/pt2.png?height=400&width=400",
+              "/images/pt3.png?height=400&width=400",
+              "/images/pt4.png?height=400&width=400",
+              "/images/pt5.png?height=400&width=400",
+              "/images/pt6.jpg?height=400&width=400",
             ].map((image, index) => (
               <div
                 key={index}
