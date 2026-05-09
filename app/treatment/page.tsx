@@ -12,13 +12,12 @@ export default function TreatmentPage() {
     {
       title: "Eyelash Extension",
       description:
-        "Transform your look with our premium eyelash extensions. Choose from classic, volume, or hybrid styles for stunning, long-lasting results.",
-      duration: "2-3 hours",
-      price: "From Rp 270.000",
+        "Transform your look with our premium eyelash extensions. Choose from classic, volume for stunning, long-lasting results.",
+      duration: "1-1.5 hours",
+      price: "From Rp 190.000",
       features: [
         "Classic Extensions",
         "Volume Extensions",
-        "Hybrid Extensions",
         "Maintenance & Refills",
       ],
       image: "images/eyelash extension.jpg",
@@ -27,9 +26,9 @@ export default function TreatmentPage() {
     {
       title: "Eyelash Lifting",
       description:
-        "Enhance your natural lashes with our professional lifting treatment. Get beautifully curled, lifted lashes that last 6-8 weeks.",
+        "Enhance your natural lashes with our professional lifting treatment. Get beautifully curled, lifted lashes that max 4 weeks.",
       duration: "1-1.5 hours",
-      price: "From Rp 225.000",
+      price: "From Rp 145.000",
       features: [
         "Natural Lash Enhancement",
         "Long-lasting Results",
@@ -43,8 +42,8 @@ export default function TreatmentPage() {
       title: "Brow Bomber",
       description:
         "Perfect your eyebrows with our signature Brow Bomber treatment. Includes shaping, tinting, and styling for flawless brows.",
-      duration: "45 minutes",
-      price: "From Rp 250.000",
+      duration: "1-1.5 hours",
+      price: "From Rp 170.000",
       features: [
         "Professional Shaping",
         "Brow Tinting",
@@ -53,21 +52,6 @@ export default function TreatmentPage() {
       ],
       image: "/images/brows.png",
       popular: false,
-    },
-    {
-      title: "Stem Cell Lash Regrowth",
-      description:
-        "Revolutionary stem cell treatment to promote natural lash growth and strengthen existing lashes for healthier, fuller lashes.",
-      duration: "1 hour",
-      price: "From Rp 350.000",
-      features: [
-        "Stem Cell Technology",
-        "Natural Growth Promotion",
-        "Lash Strengthening",
-        "Visible Results in 4-6 weeks",
-      ],
-      image: "/images/brows nail art.jpg",
-      popular: true,
     },
   ];
 
@@ -94,7 +78,7 @@ export default function TreatmentPage() {
       {/* Treatments Grid */}
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {treatments.map((treatment, index) => (
               <Card
                 key={index}

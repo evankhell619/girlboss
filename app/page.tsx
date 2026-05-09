@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Star, Instagram, Facebook, Phone, MapPin } from "lucide-react";
+import { Instagram, Phone, MapPin } from "lucide-react";
 import Navigation from "@/components/navigation";
 import { WhatsAppIcon } from "@/components/whatsapp-icon";
 
@@ -79,7 +79,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 title: "Eyelash Extensions",
@@ -106,7 +106,7 @@ export default function HomePage() {
                 image: "/images/lashlift.png",
               },
               {
-                title: "Pedicure",
+                title: "Callus Pedicure",
                 description:
                   "Relaxing foot care with clean finishing and lasting shine",
                 image: "/images/callus pedicure.png",
@@ -123,16 +123,12 @@ export default function HomePage() {
                   "Gentle waxing experience with premium RICA products",
                 image: "/images/waxing.jpg",
               },
-              {
-                title: "Lip Tatto",
-                description:
-                  "Soft tint for fuller, defined lips with a natural look",
-                image: "/images/lip tatto.jpg",
-              },
             ].map((service, index) => (
               <Card
                 key={index}
-                className="group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white/80 backdrop-blur-sm border-0 shadow-lg"
+                className={`group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white/80 backdrop-blur-sm border-0 shadow-lg ${
+                  index === 6 ? "md:col-span-2 lg:col-span-1 lg:col-start-2" : ""
+                }`}
               >
                 <div className="relative overflow-hidden rounded-t-lg">
                   <Image
