@@ -168,11 +168,11 @@ export default function TreatmentPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               "/images/product1.png",
-              "/images/product2.jpg",
-              "/images/product3.jpg",
-              "/images/product4.avif",
+              "/images/product2.png",
+              "/images/product3.png",
+              "/images/product4.png",
               "/images/product5.jpg",
-              "/images/product6.jpg",
+              "/images/product6.png",
             ].map((image, index) => (
               <div
                 key={index}
