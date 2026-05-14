@@ -104,7 +104,7 @@ export default function HomeServicePage() {
                     alt={service.title}
                     width={400}
                     height={300}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-64 lg:h-80 object-cover object-center group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -207,7 +207,7 @@ export default function HomeServicePage() {
 
           <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg p-8 mb-8">
             <Image
-              src="/placeholder.svg?height=300&width=500"
+              src="/images/areas.png"
               alt="Service Areas Map"
               width={500}
               height={300}
