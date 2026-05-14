@@ -9,28 +9,28 @@ import { WhatsAppIcon } from "@/components/whatsapp-icon";
 export default function HomeServicePage() {
   const services = [
     {
-      title: "Mobile Eyelash Extensions",
+      title: "Wedding Nails",
       description:
-        "Professional eyelash extension service in the comfort of your own home. Perfect for busy schedules or special occasions.",
-      duration: "2.5-3.5 hours",
-      price: "From Rp 225.000",
-      image: "/images/hs1.jpg",
-    },
-    {
-      title: "Home Nail Art Session",
-      description:
-        "Creative nail art and manicure services delivered to your doorstep. Includes all premium products and tools.",
-      duration: "1.5-2 hours",
+        "Elegant wedding nail service for brides, bridesmaids, and special occasion looks with a polished finish.",
+      duration: "1.5-2.5 hours",
       price: "From Rp 265.000",
-      image: "/images/hs2.png",
+      image: "/images/wedd1.JPG",
     },
     {
-      title: "Bridal Beauty Package",
+      title: "Home Service Lash",
       description:
-        "Complete bridal beauty service including lashes, nails, and brows. Perfect for your special day preparation.",
-      duration: "4-5 hours",
+        "Professional lash treatment delivered to your location for a fresh, lifted, and camera-ready look.",
+      duration: "2-3 hours",
+      price: "From Rp 225.000",
+      image: "/images/home service02.JPG",
+    },
+    {
+      title: "Home Service Tratment",
+      description:
+        "Complete beauty treatment at home with premium products, clean setup, and personalized service.",
+      duration: "2-4 hours",
       price: "From Rp 350.000",
-      image: "/images/hs3.jpg",
+      image: "/images/hs03.jpeg",
     },
   ];
 
@@ -104,7 +104,7 @@ export default function HomeServicePage() {
                     alt={service.title}
                     width={400}
                     height={300}
-                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
