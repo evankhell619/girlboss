@@ -46,7 +46,7 @@ export default function AboutPage() {
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 Founded with a passion for beauty and empowerment, Girl Boss Beauty Studio has been transforming lives
-                through exceptional nail art and eyelash services since 2018.
+                through exceptional nail art and eyelash services since 2022.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/booking">
@@ -92,7 +92,7 @@ export default function AboutPage() {
           <div className="prose prose-lg mx-auto text-gray-600 leading-relaxed">
             <p className="text-xl mb-6">
               Girl Boss Beauty Studio was born from a simple belief: every woman deserves to feel like a boss. Founded
-              in 2018 by Sarah Chen, our studio began as a small space with big dreams and an unwavering commitment to
+              in 2022, our studio began as a small space with big dreams and an unwavering commitment to
               excellence.
             </p>
             <p className="text-lg mb-6">
@@ -145,7 +145,7 @@ export default function AboutPage() {
             ].map((value, index) => (
               <Card
                 key={index}
-                className="text-center p-6 bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                className="text-center p-6 bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full"
               >
                 <div className="flex justify-center mb-4">{value.icon}</div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">{value.title}</h3>
@@ -229,7 +229,7 @@ export default function AboutPage() {
             <p className="text-xl text-gray-600">Recognition and milestones that make us proud</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {[
               {
                 number: "2000+",
@@ -242,11 +242,6 @@ export default function AboutPage() {
                 description: "Years of excellence in the beauty industry",
               },
               {
-                number: "15+",
-                label: "Awards Won",
-                description: "Recognition for outstanding service and quality",
-              },
-              {
                 number: "98%",
                 label: "Client Retention",
                 description: "Clients who return for our exceptional services",
@@ -254,7 +249,7 @@ export default function AboutPage() {
             ].map((stat, index) => (
               <Card
                 key={index}
-                className="text-center p-6 bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                className="text-center p-8 bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full"
               >
                 <div className="text-4xl font-bold text-pink-600 mb-2">{stat.number}</div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">{stat.label}</h3>
