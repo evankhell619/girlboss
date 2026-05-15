@@ -94,7 +94,7 @@ export default function HomePage() {
                 image: "/images/nail art.jpg",
               },
               {
-                title: "Brow Bomber",
+                title: "Brow Lamination",
                 description:
                   "Perfect eyebrow shaping and enhancement treatments",
                 image: "/images/brows.png",

@@ -43,7 +43,7 @@ export default function PrivateTreatmentPage() {
 
             <div className="relative">
               <Image
-                src="/images/wedd1.jpg?height=500&width=600"
+                src="/images/private1.jpeg?height=500&width=600"
                 alt="Private Treatment Suite"
                 width={600}
                 height={500}

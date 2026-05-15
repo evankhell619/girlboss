@@ -91,7 +91,7 @@ export default function AboutPage() {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-8">Our Story</h2>
           <div className="prose prose-lg mx-auto text-gray-600 leading-relaxed">
             <p className="text-xl mb-6">
-              Girl Boss Beauty Studio was born from a simple belief: every woman deserves to feel like a boss. Founded
+              Girl Boss Beauty Studio was born from a simple belief: every woman deserves to feel like a boss. Establish
               in 2022, our studio began as a small space with big dreams and an unwavering commitment to
               excellence.
             </p>
@@ -237,7 +237,7 @@ export default function AboutPage() {
                 description: "Satisfied customers who trust us with their beauty needs",
               },
               {
-                number: "6",
+                number: "4",
                 label: "Years Experience",
                 description: "Years of excellence in the beauty industry",
               },

@@ -148,12 +148,12 @@ export default function LocationPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              "/placeholder.svg?height=400&width=400",
-              "/placeholder.svg?height=400&width=400",
-              "/placeholder.svg?height=400&width=400",
-              "/placeholder.svg?height=400&width=400",
-              "/placeholder.svg?height=400&width=400",
-              "/placeholder.svg?height=400&width=400",
+              "/images/gallery1.jpeg?height=400&width=400",
+              "/images/gallery2.jpeg?height=400&width=400",
+              "/images/gallery7.jpeg?height=400&width=400",
+              "/images/gallery4.jpeg?height=400&width=400",
+              "/images/gallery5.jpeg?height=400&width=400",
+              "/images/gallery6.jpeg?height=400&width=400",
             ].map((image, index) => (
               <div
                 key={index}

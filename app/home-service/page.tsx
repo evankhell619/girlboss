@@ -13,7 +13,7 @@ export default function HomeServicePage() {
       description:
         "Elegant wedding nail service for brides, bridesmaids, and special occasion looks with a polished finish.",
       duration: "1.5-2.5 hours",
-      price: "From Rp 265.000",
+      price: "From Rp 350.000",
       image: "/images/wedd1.JPG",
     },
     {
@@ -66,7 +66,7 @@ export default function HomeServicePage() {
 
             <div className="relative">
               <Image
-                src="/images/home service.jpg?height=500&width=600"
+                src="/images/hs03.jpeg?height=500&width=600"
                 alt="Home Beauty Service"
                 width={600}
                 height={500}
