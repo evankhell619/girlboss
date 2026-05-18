@@ -22,7 +22,7 @@ export default function HomeServicePage() {
         "Professional lash treatment delivered to your location for a fresh, lifted, and camera-ready look.",
       duration: "2-3 hours",
       price: "From Rp 225.000",
-      image: "/images/home service02.JPG",
+      image: "/images/homeservice2.jpg",
     },
     {
       title: "Home Service Tratment",
