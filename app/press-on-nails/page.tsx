@@ -10,22 +10,22 @@ import { WhatsAppIcon } from "@/components/whatsapp-icon"
 export default function PressOnNailsPage() {
   const pressOnNailsMenu = [
     {
-      title: "Classic Press On Nails",
-      price: "From Rp 150.000",
+      title: "Ready Press On Nails",
+      price: "From Rp 45.000",
       details: ["Reusable set", "Natural finish", "Custom sizing"],
       image: "/images/press on nail 1.png",
       description: "Elegant ready-to-wear nails for a clean, polished everyday look.",
     },
     {
-      title: "Nail Art Press On Nails",
-      price: "From Rp 200.000",
+      title: "Custom Simple Press On Nails",
+      price: "From Rp 70.000",
       details: ["Hand-painted design", "Reusable set", "Glue kit included"],
       image: "/images/press on nail 2.png",
       description: "Statement designs made for special occasions, content days, and standout looks.",
     },
     {
-      title: "Custom Press On Nails",
-      price: "From Rp 250.000",
+      title: "Complex Design Press On Nails",
+      price: "From Rp 225.000",
       details: ["Personalized design", "Shape consultation", "Made to order"],
       image: "/images/press on nail 3.png",
       description: "A fully customized set tailored to your preferred color, shape, and nail art style.",
