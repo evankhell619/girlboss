@@ -166,6 +166,17 @@ html {
   overflow: hidden;
 }
 
+.instagram-embed-frame .instagram-media,
+.instagram-embed-frame iframe {
+  border: 0 !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+.instagram-embed-frame iframe {
+  border-radius: 18px !important;
+}
+
 /* Dark mode specific styles */
 .dark .bg-gradient-to-br {
   @apply from-gray-900 via-gray-800 to-purple-900;

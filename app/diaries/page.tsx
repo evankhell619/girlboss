@@ -73,41 +73,45 @@ export default function DiariesPage() {
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 items-start">
             {instagramPosts.map((postUrl) => (
               <div key={postUrl} className="flex justify-center">
-                <blockquote
-                  className="instagram-media"
-                  data-instgrm-captioned
-                  data-instgrm-permalink={`${postUrl}?utm_source=ig_embed&utm_campaign=loading`}
-                  data-instgrm-version="14"
-                  style={{
-                    background: "#FFF",
-                    border: 0,
-                    borderRadius: 3,
-                    boxShadow: "0 0 1px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0,0,0,0.15)",
-                    margin: 1,
-                    maxWidth: 540,
-                    minWidth: 326,
-                    padding: 0,
-                    width: "calc(100% - 2px)",
-                  }}
-                >
-                  <div style={{ padding: 16 }}>
-                    <a
-                      href={`${postUrl}?utm_source=ig_embed&utm_campaign=loading`}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                <div className="instagram-embed-frame w-full max-w-[540px] rounded-[28px] bg-gradient-to-br from-pink-300 via-white to-purple-300 p-[2px] shadow-[0_18px_45px_rgba(219,39,119,0.16)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_60px_rgba(147,51,234,0.22)] dark:from-pink-500/60 dark:via-gray-700 dark:to-purple-500/60">
+                  <div className="rounded-[26px] bg-white p-3 dark:bg-gray-900">
+                    <blockquote
+                      className="instagram-media"
+                      data-instgrm-captioned
+                      data-instgrm-permalink={`${postUrl}?utm_source=ig_embed&utm_campaign=loading`}
+                      data-instgrm-version="14"
                       style={{
-                        background: "#FFFFFF",
-                        lineHeight: 0,
+                        background: "#FFF",
+                        border: 0,
+                        borderRadius: 18,
+                        boxShadow: "none",
+                        margin: 0,
+                        maxWidth: 540,
+                        minWidth: 0,
                         padding: 0,
-                        textAlign: "center",
-                        textDecoration: "none",
                         width: "100%",
                       }}
                     >
-                      View this post on Instagram
-                    </a>
+                      <div style={{ padding: 16 }}>
+                        <a
+                          href={`${postUrl}?utm_source=ig_embed&utm_campaign=loading`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            background: "#FFFFFF",
+                            lineHeight: 0,
+                            padding: 0,
+                            textAlign: "center",
+                            textDecoration: "none",
+                            width: "100%",
+                          }}
+                        >
+                          View this post on Instagram
+                        </a>
+                      </div>
+                    </blockquote>
                   </div>
-                </blockquote>
+                </div>
               </div>
             ))}
           </div>
