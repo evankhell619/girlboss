@@ -14,7 +14,7 @@ export default function Navigation() {
     { name: "Treatment", href: "/treatment" },
     { name: "Home Service", href: "/home-service" },
     { name: "Private Treatment", href: "/private-treatment" },
-    { name: "About Girl Boss", href: "/about" },
+    { name: "Press On Nails", href: "/press-on-nails" },
     { name: "Location", href: "/location" },
     { name: "Diaries", href: "/diaries" },
     { name: "Booking Online", href: "/booking" },

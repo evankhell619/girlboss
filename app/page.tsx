@@ -325,10 +325,10 @@ export default function HomePage() {
               <ul className="space-y-2 text-gray-300">
                 <li>
                   <Link
-                    href="/about"
+                    href="/press-on-nails"
                     className="hover:text-pink-400 transition-colors"
                   >
-                    About Us
+                    Press On Nails
                   </Link>
                 </li>
                 <li>

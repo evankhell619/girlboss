@@ -3,11 +3,11 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Award, Heart, Users, Sparkles } from "lucide-react"
+import { Sparkles } from "lucide-react"
 import Navigation from "@/components/navigation"
 import { WhatsAppIcon } from "@/components/whatsapp-icon"
 
-export default function AboutPage() {
+export default function PressOnNailsPage() {
   const pressOnNailsMenu = [
     {
       title: "Classic Press On Nails",
@@ -36,128 +36,8 @@ export default function AboutPage() {
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50">
       <Navigation />
 
-      {/* Hero Section */}
-      <section className="pt-24 pb-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in-up">
-              <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-pink-600 via-purple-600 to-pink-800 bg-clip-text text-transparent mb-6">
-                About Girl Boss
-              </h1>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Founded with a passion for beauty and empowerment, Girl Boss Beauty Studio has been transforming lives
-                through exceptional nail art and eyelash services since 2022.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/booking">
-                  <Button
-                    size="lg"
-                    className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-                  >
-                    <WhatsAppIcon className="w-5 h-5 mr-2" />
-                    Book With Us
-                  </Button>
-                </Link>
-                <Link href="/treatment">
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="border-2 border-pink-500 text-pink-600 hover:bg-pink-50 px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 bg-transparent"
-                  >
-                    Our Services
-                  </Button>
-                </Link>
-              </div>
-            </div>
-
-            <div className="relative">
-              <Image
-                src="/images/logo2.png?height=500&width=600"
-                alt="Girl Boss Beauty Studio"
-                width={600}
-                height={500}
-                className="rounded-2xl shadow-2xl"
-              />
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-pink-200 rounded-full opacity-60 animate-pulse"></div>
-              <div className="absolute -top-6 -right-6 w-24 h-24 bg-purple-200 rounded-full opacity-60 animate-pulse"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Story */}
-      <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-8">Our Story</h2>
-          <div className="prose prose-lg mx-auto text-gray-600 leading-relaxed">
-            <p className="text-xl mb-6">
-              Girl Boss Beauty Studio was born from a simple belief: every woman deserves to feel like a boss. Establish
-              in 2022, our studio began as a small space with big dreams and an unwavering commitment to
-              excellence.
-            </p>
-            <p className="text-lg mb-6">
-              What started as a passion project has grown into the premier destination for luxury nail art and eyelash
-              services. We've built our reputation on three core principles: exceptional quality, personalized service,
-              and empowering our clients to embrace their inner boss.
-            </p>
-            <p className="text-lg">
-              Today, we're proud to serve hundreds of satisfied clients who trust us with their beauty needs. From
-              everyday elegance to special occasion glamour, we're here to help you look and feel your absolute best.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Values */}
-      <section className="py-20 bg-gradient-to-r from-pink-100 to-purple-100">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Values</h2>
-            <p className="text-xl text-gray-600">The principles that guide everything we do</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                icon: <Award className="w-12 h-12 text-pink-500" />,
-                title: "Excellence",
-                description:
-                  "We strive for perfection in every treatment, using only the finest products and techniques.",
-              },
-              {
-                icon: <Heart className="w-12 h-12 text-purple-500" />,
-                title: "Care",
-                description:
-                  "Every client receives personalized attention and care in a welcoming, comfortable environment.",
-              },
-              {
-                icon: <Users className="w-12 h-12 text-pink-500" />,
-                title: "Empowerment",
-                description:
-                  "We believe beauty treatments should make you feel confident, powerful, and ready to conquer the world.",
-              },
-              {
-                icon: <Sparkles className="w-12 h-12 text-purple-500" />,
-                title: "Innovation",
-                description:
-                  "We stay ahead of trends and continuously update our techniques to offer the latest in beauty innovation.",
-              },
-            ].map((value, index) => (
-              <Card
-                key={index}
-                className="text-center p-6 bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full"
-              >
-                <div className="flex justify-center mb-4">{value.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">{value.title}</h3>
-                <p className="text-gray-600">{value.description}</p>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Press On Nails Menu */}
-      <section className="py-20 px-4">
+      <section className="pt-28 pb-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Press On Nails Menu</h2>
