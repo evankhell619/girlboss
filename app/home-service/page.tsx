@@ -9,11 +9,11 @@ import { WhatsAppIcon } from "@/components/whatsapp-icon";
 export default function HomeServicePage() {
   const services = [
     {
-      title: "Wedding Nails",
+      title: "Home Service Nails",
       description:
-        "Elegant wedding nail service for brides, bridesmaids, and special occasion looks with a polished finish.",
+        "Elegant nail service for brides, bridesmaids, and special occasion looks with a polished finish.",
       duration: "1.5-2.5 hours",
-      price: "From Rp 350.000",
+      price: "From Rp 195.000",
       image: "/images/wedd1.JPG",
     },
     {
@@ -21,16 +21,16 @@ export default function HomeServicePage() {
       description:
         "Professional lash treatment delivered to your location for a fresh, lifted, and camera-ready look.",
       duration: "2-3 hours",
-      price: "From Rp 225.000",
+      price: "From Rp 270.000",
       image: "/images/homeservice2.jpg",
     },
     {
-      title: "Home Service Tratment",
+      title: "Home Service Waxing",
       description:
-        "Complete beauty treatment at home with premium products, clean setup, and personalized service.",
+        "Gentle waxing treatment at home with premium products, clean setup, and personalized service.",
       duration: "2-4 hours",
-      price: "From Rp 350.000",
-      image: "/images/hs03.jpeg",
+      price: "From Rp 150.000",
+      image: "/images/wax.png",
     },
   ];
 
@@ -201,8 +201,8 @@ export default function HomeServicePage() {
             Service Areas
           </h2>
           <p className="text-xl text-gray-600 mb-8">
-            We provide home services within a 25km radius of our main studio.
-            Contact us to confirm availability in your area.
+            Average service range 10-12km radius from our main studio. Contact
+            us to confirm availability in your area.
           </p>
 
           <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg p-8 mb-8">

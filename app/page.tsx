@@ -284,13 +284,13 @@ export default function HomePage() {
 
             <div>
               <h4 className="text-lg font-semibold mb-4">Services</h4>
-              <ul className="space-y-2 text-gray-300">
+              <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-x-6 gap-y-2 text-gray-300">
                 <li>
                   <Link
                     href="/treatment"
                     className="hover:text-pink-400 transition-colors"
                   >
-                    Eyelash Extensions
+                    Eyelash Extension
                   </Link>
                 </li>
                 <li>
@@ -298,7 +298,7 @@ export default function HomePage() {
                     href="/treatment"
                     className="hover:text-pink-400 transition-colors"
                   >
-                    Nail Art
+                    Lashlift
                   </Link>
                 </li>
                 <li>
@@ -306,15 +306,47 @@ export default function HomePage() {
                     href="/treatment"
                     className="hover:text-pink-400 transition-colors"
                   >
-                    Lash Lifting
+                    Brow Lamination
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/treatment"
+                    href="/home-service"
                     className="hover:text-pink-400 transition-colors"
                   >
-                    Brow Bomber
+                    Wedding Nails
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/home-service"
+                    className="hover:text-pink-400 transition-colors"
+                  >
+                    Home Service Lash
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/home-service"
+                    className="hover:text-pink-400 transition-colors"
+                  >
+                    Home Service Treatment
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/press-on-nails"
+                    className="hover:text-pink-400 transition-colors"
+                  >
+                    Press On Nails
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/private-treatment"
+                    className="hover:text-pink-400 transition-colors"
+                  >
+                    Private Treatment
                   </Link>
                 </li>
               </ul>

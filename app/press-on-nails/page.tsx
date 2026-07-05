@@ -13,7 +13,7 @@ export default function PressOnNailsPage() {
       title: "Ready Press On Nails",
       price: "From Rp 45.000",
       details: ["Reusable set", "Natural finish", "Custom sizing"],
-      image: "/images/press on nail 1.png",
+      image: "/images/nails6.png",
       description: "Elegant ready-to-wear nails for a clean, polished everyday look.",
     },
     {

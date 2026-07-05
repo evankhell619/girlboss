@@ -24,9 +24,9 @@ export default function TreatmentPage() {
       popular: true,
     },
     {
-      title: "Eyelash Lifting",
+      title: "Lashlift",
       description:
-        "Enhance your natural lashes with our professional lifting treatment. Get beautifully curled, lifted lashes that max 4 weeks.",
+        "Enhance your natural lashes with our professional lashlift treatment. Get beautifully curled, lifted lashes that max 4 weeks.",
       duration: "1-1.5 hours",
       price: "From Rp 145.000",
       features: [
@@ -39,9 +39,9 @@ export default function TreatmentPage() {
       popular: false,
     },
     {
-      title: "Brow Bomber",
+      title: "Brow Lamination",
       description:
-        "Perfect your eyebrows with our signature Brow Bomber treatment. Includes shaping, tinting, and styling for flawless brows.",
+        "Perfect your eyebrows with our signature Brow Lamination treatment. Includes shaping, tinting, and styling for flawless brows.",
       duration: "1-1.5 hours",
       price: "From Rp 170.000",
       features: [
