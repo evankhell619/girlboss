@@ -1,11 +1,11 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Sparkles } from "lucide-react"
-import Navigation from "@/components/navigation"
-import { WhatsAppIcon } from "@/components/whatsapp-icon"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Sparkles } from "lucide-react";
+import Navigation from "@/components/navigation";
+import { WhatsAppIcon } from "@/components/whatsapp-icon";
 
 export default function PressOnNailsPage() {
   const pressOnNailsMenu = [
@@ -14,23 +14,26 @@ export default function PressOnNailsPage() {
       price: "From Rp 45.000",
       details: ["Reusable set", "Natural finish", "Custom sizing"],
       image: "/images/nails6.png",
-      description: "Elegant ready-to-wear nails for a clean, polished everyday look.",
+      description:
+        "Elegant ready-to-wear nails for a clean, polished everyday look.",
     },
     {
       title: "Custom Simple Press On Nails",
       price: "From Rp 70.000",
       details: ["Hand-painted design", "Reusable set", "Glue kit included"],
       image: "/images/press on nail 2.png",
-      description: "Statement designs made for special occasions, content days, and standout looks.",
+      description:
+        "Statement designs made for special occasions, content days, and standout looks.",
     },
     {
-      title: "Complex Design Press On Nails",
+      title: "Custom Combination Design Press On Nails",
       price: "From Rp 225.000",
       details: ["Personalized design", "Shape consultation", "Made to order"],
       image: "/images/press on nail 3.png",
-      description: "A fully customized set tailored to your preferred color, shape, and nail art style.",
+      description:
+        "A fully customized set tailored to your preferred color, shape, and nail art style.",
     },
-  ]
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50">
@@ -40,9 +43,12 @@ export default function PressOnNailsPage() {
       <section className="pt-28 pb-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Press On Nails Menu</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+              Press On Nails Menu
+            </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Shop reusable press-on nail sets made for instant glam, easy application, and custom-fit comfort.
+              Shop reusable press-on nail sets made for instant glam, easy
+              application, and custom-fit comfort.
             </p>
           </div>
 
@@ -66,22 +72,34 @@ export default function PressOnNailsPage() {
                 <CardContent className="p-6">
                   <div className="flex justify-between items-start mb-2">
                     <div>
-                      <h3 className="text-xl font-bold text-gray-800">{item.title}</h3>
+                      <h3 className="text-xl font-bold text-gray-800">
+                        {item.title}
+                      </h3>
                       <p className="text-pink-600 font-medium">{item.price}</p>
                     </div>
-                    <Badge variant="outline" className="border-purple-500 text-purple-600">
+                    <Badge
+                      variant="outline"
+                      className="border-purple-500 text-purple-600"
+                    >
                       <Sparkles className="w-3 h-3 mr-1" />
                       Ready Set
                     </Badge>
                   </div>
 
-                  <p className="text-gray-600 mb-4 text-sm leading-relaxed">{item.description}</p>
+                  <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+                    {item.description}
+                  </p>
 
                   <div className="mb-4">
-                    <h4 className="font-semibold text-gray-800 mb-2 text-sm">Includes:</h4>
+                    <h4 className="font-semibold text-gray-800 mb-2 text-sm">
+                      Includes:
+                    </h4>
                     <div className="flex flex-wrap gap-2">
                       {item.details.map((detail, detailIndex) => (
-                        <Badge key={detailIndex} className="bg-pink-100 text-pink-700 text-xs">
+                        <Badge
+                          key={detailIndex}
+                          className="bg-pink-100 text-pink-700 text-xs"
+                        >
                           {detail}
                         </Badge>
                       ))}
@@ -105,8 +123,12 @@ export default function PressOnNailsPage() {
       <section className="py-20 bg-gradient-to-r from-pink-100 to-purple-100">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Achievements</h2>
-            <p className="text-xl text-gray-600">Recognition and milestones that make us proud</p>
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">
+              Our Achievements
+            </h2>
+            <p className="text-xl text-gray-600">
+              Recognition and milestones that make us proud
+            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -114,7 +136,8 @@ export default function PressOnNailsPage() {
               {
                 number: "2000+",
                 label: "Happy Clients",
-                description: "Satisfied customers who trust us with their beauty needs",
+                description:
+                  "Satisfied customers who trust us with their beauty needs",
               },
               {
                 number: "4",
@@ -131,8 +154,12 @@ export default function PressOnNailsPage() {
                 key={index}
                 className="text-center p-8 bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 h-full"
               >
-                <div className="text-4xl font-bold text-pink-600 mb-2">{stat.number}</div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">{stat.label}</h3>
+                <div className="text-4xl font-bold text-pink-600 mb-2">
+                  {stat.number}
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  {stat.label}
+                </h3>
                 <p className="text-gray-600 text-sm">{stat.description}</p>
               </Card>
             ))}
@@ -143,10 +170,13 @@ export default function PressOnNailsPage() {
       {/* CTA Section */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Ready to Join the Girl Boss Family?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+            Ready to Join the Girl Boss Family?
+          </h2>
           <p className="text-xl text-gray-600 mb-8">
-            Experience the difference that passion, expertise, and dedication can make. Book your appointment today and
-            discover why we're the premier choice for beauty services.
+            Experience the difference that passion, expertise, and dedication
+            can make. Book your appointment today and discover why we're the
+            premier choice for beauty services.
           </p>
           <Link href="/booking">
             <Button
@@ -160,5 +190,5 @@ export default function PressOnNailsPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }
